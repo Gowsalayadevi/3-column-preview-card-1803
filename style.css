@@ -1,0 +1,139 @@
+:root{
+    --brightorange:hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan:hsl(179, 100%, 13%);
+    --paracolor:hsla(0, 0%, 100%, 0.75);
+    --backgroundcolor:hsl(0, 0%, 95%);
+    --fontheading:'Big Shoulders Display', cursive;
+    --fontpara:'Lexend Deca', sans-serif;
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin:0;
+}
+
+h2,
+p,
+img{
+    margin-bottom:2em;
+}
+h2{
+    font-family: var(--fontheading);
+    font-size: 1.5rem;
+    color:var(--backgroundcolor);
+    text-transform: uppercase;
+    
+}
+p{
+    font-family: var(--fontpara);
+    font-size: 0.75rem;
+    color:var(--paracolor);
+    line-height:1.7em;
+}
+a{
+    display:inline-block;
+    text-decoration: none;
+    padding: 0.187em .625em;
+    border-radius:1.5em;
+    background-color: var(--backgroundcolor);
+}
+a:hover,
+a:focus{
+   color:white;
+   border:1px solid white;
+}
+img{
+    width:25%;
+}
+.sedans{
+    background-color: var(--brightorange);
+    border-color:var(--brightorange);
+    border-radius:.625em .625em 0 0;
+}
+.suvs{
+    background-color: var(--darkcyan);
+    border-color:var(--darkcyan);
+}
+.luxury{
+    background-color: var(--verydarkcyan);
+    border-radius: 0 0 .625em .625em;
+    border-color:var(--verydarkcyan);
+    
+}
+.sedanbtn{
+    color: var(--brightorange);
+}
+.suvbtn{
+    color: var(--darkcyan);
+}
+.luxurybtn{
+    color: var(--verydarkcyan);
+}
+.sedanbtn:hover,
+.sedanbtn:focus
+{
+    background-color: var(--brightorange);
+}
+.suvbtn:hover,
+.suvbtn:focus{
+    background-color: var(--darkcyan);
+}
+.luxurybtn:hover,
+.luxurybtn:focus{
+    background-color: var(--verydarkcyan);
+}
+
+
+body{
+    width:500px;
+    margin:0 auto;
+    background-color: var(--backgroundcolor);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin:2.5em 0;  
+    width:280px; 
+
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:2em;    
+}
+
+
+@media screen and (min-width:600px){
+    
+    body{
+        width:1440px;
+        height: 100vh;
+       
+    }
+    
+    .container{
+        width:650px;
+        display:flex;
+        
+    }
+    .sedans{
+      
+        border-radius:.625em 0 0 .625em;
+    }
+    .luxury{
+
+        border-radius: 0 .625em .625em 0;
+    }
+    
+}
+
+
+
+
