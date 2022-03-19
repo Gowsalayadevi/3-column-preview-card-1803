@@ -31,7 +31,7 @@ p{
     font-family: var(--fontpara);
     font-size: 0.75rem;
     color:var(--paracolor);
-    line-height:1.7em;
+    line-height:1.7;
 }
 a{
     display:inline-block;
@@ -51,7 +51,6 @@ img{
 .sedans{
     background-color: var(--brightorange);
     border-color:var(--brightorange);
-    border-radius:.625em .625em 0 0;
 }
 .suvs{
     background-color: var(--darkcyan);
@@ -59,8 +58,7 @@ img{
 }
 .luxury{
     background-color: var(--verydarkcyan);
-    border-radius: 0 0 .625em .625em;
-    border-color:var(--verydarkcyan);
+     border-color:var(--verydarkcyan);
     
 }
 .sedanbtn{
@@ -88,7 +86,7 @@ img{
 
 
 body{
-    width:500px;
+    max-width:500px;
     margin:0 auto;
     background-color: var(--backgroundcolor);
     display:flex;
@@ -100,6 +98,8 @@ body{
 .container{
     margin:2.5em 0;  
     width:280px; 
+    border-radius: 10px 10px 10px 10px;
+    overflow:hiddden;
 
 }
 .card{
@@ -113,8 +113,8 @@ body{
 @media screen and (min-width:600px){
     
     body{
-        width:1440px;
-        height: 100vh;
+        max-width:1440px;
+        min-height: 100vh;
        
     }
     
@@ -123,14 +123,7 @@ body{
         display:flex;
         
     }
-    .sedans{
-      
-        border-radius:.625em 0 0 .625em;
-    }
-    .luxury{
-
-        border-radius: 0 .625em .625em 0;
-    }
+   
     
 }
 
